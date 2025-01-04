@@ -51,6 +51,13 @@ button{
     padding:0 30px 30px;
     color:#333;
     visibility:hidden;
+    transition:transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility:visible;
+    top:50%;
+    transform:translate(-50%,-50%) scale(1);
 }
 .popup img{
     width:100px;
@@ -63,23 +70,35 @@ button{
     font-weight:500;
     margin:30px 0 10px;
 }
+.popup h4{
+    font-size:20px;
+    font-weight:500;
+    margin:20px 0 10px;
+}
+.popup p{
+    font-size:15px;
+    font-weight:500;
+    margin:10px 0 10px;
+}
 .popup button{
-    width:100%;
+    width:80%;
+    height:40px;
+    background:lightblue;
+    border-radius:20px
     margin-top:50px;
     padding:10px 0;
-    background:36fd649;
     color:#fff;
     border:0;
     outline:none;
 
 }
-.btn1{
-    border-radius:20px;
-    height:30px;
-    width:60px;
+.popup button:hover{
+    background:black;
+    color:white;
+    font-size:20px;
     cursor:pointer;
-    background:lightblue;
 }
+
 button:hover{
     background:black;
     color:white;
